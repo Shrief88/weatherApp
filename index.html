@@ -9,10 +9,35 @@
 </head>
 <body>
     <div id="content">
-        <div id="info"></div>
         <div id="search">
             <input id="cityName" type="text" required>
             <label for="cityName">Type for search</label>
+            <p id="error"></p>
+        </div>
+        <div id="info">
+            <p id="city"></p>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <img id="icon">
+            <div id="others">
+                <div class="weather-element">
+                    <p>feels like</p>
+                    <p id="feels-like"></p>
+                </div>
+
+                <div class="weather-element">
+                    <p>Humidity</p>
+                    <p id="humidity"></p>
+                </div>
+                <div class="weather-element">
+                    <p>Pressure</p>
+                    <p id="pressure"></p>
+                </div>
+                <div class="weather-element">
+                    <p>Wind Speed</p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
