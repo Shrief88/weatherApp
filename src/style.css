@@ -36,6 +36,12 @@ body{
     gap: 30px;
 }
 
+.hide-element{
+    display: none;
+}
+
+/*******************************input**************************************/
+
 #search{
     width: 300px;
     position: relative;
@@ -71,8 +77,16 @@ body{
    font-size: 0.9rem;
 }
 
+#error{
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+}
 
-#info{
+
+/**************************************info**************************************/
+
+.info{
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -106,6 +120,7 @@ body{
     padding: 10px 15px;
     color: white;
     border-radius: 10px;
+    border-radius: 20px;
 }
 
 #others p:first-child{
@@ -116,13 +131,40 @@ body{
 
 .weather-element{
     display: flex;
-    gap: 150px;
+    gap: 100px;
     justify-content: space-between;
 }
 
-#error{
-    color: red;
-    font-size: 1rem;
-    margin-top: 10px;
+
+@media only screen and (max-width: 500px) {
+
+    .info{
+        width: 320px;
+        padding: 30px 20px;  
+    }
+
+   .weather-element{
+    gap: 50px;
+   }   
 }
+
+@media only screen and (max-width: 380px) {
+
+    .info{
+        width: 310px;
+        padding: 30px 5px;  
+    }
+
+   .weather-element{
+    gap: 40px;
+   }   
+}
+
+
+
+
+
+
+
+
 
