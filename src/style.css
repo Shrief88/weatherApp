@@ -1,0 +1,65 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(./imgs/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#content{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search{
+    padding: 25px 10px 5px 20px;
+    width: 300px;
+    border-radius: 30px;
+    height: 70px;
+    border: 1px solid #CED4DA;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.56);
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#search label{
+    position: absolute;
+    color: #c96f6f;
+   
+    transition: .5s;
+}
+
+#search input{
+    border: none;
+    border-bottom: 1px solid #CED4DA;
+    font-size: 1rem;
+    padding-bottom: 2px;
+    color: black;
+    
+}
+
+#search input:focus{
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+
+#search input:focus ~ label , #search input:valid ~ label{
+   top: 10px; 
+   color: blue;
+   font-weight: lighter;
+   font-size: 0.7rem;
+}
+
