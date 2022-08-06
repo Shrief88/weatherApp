@@ -24,7 +24,7 @@ const displayData = (data) => {
   description.textContent = data.weather[0].description;
   city.textContent = data.name;
   temp.textContent = `${Math.round(data.main.temp)} °C`;
-  icon.setAttribute('src',`./icons/${data.weather[0].icon}.png`);
+  icon.setAttribute('src', `./icons/${data.weather[0].icon}.png`);
   feelsLike.textContent = `${data.main.feels_like} °C`;
   humidity.textContent = `${data.main.humidity} %`;
   pressure.textContent = `${data.main.pressure} %`;
@@ -47,13 +47,11 @@ const displayController = () => {
   });
 };
 
-
-
 async function init() {
   const info = document.querySelector('.info');
-  info.classList.add('hide-element');  
+  info.classList.add('hide-element');
   const data = await getWeatherData('cairo');
-  info.classList.remove('hide-element');  
+  info.classList.remove('hide-element');
   displayData(data);
 }
 

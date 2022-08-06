@@ -137,7 +137,6 @@ body{
 
 
 @media only screen and (max-width: 500px) {
-
     .info{
         width: 320px;
         padding: 30px 20px;  
@@ -149,7 +148,6 @@ body{
 }
 
 @media only screen and (max-width: 380px) {
-
     .info{
         width: 310px;
         padding: 30px 5px;  
